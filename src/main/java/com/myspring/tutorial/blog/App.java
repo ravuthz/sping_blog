@@ -4,10 +4,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 //import org.springframework.context.support.FileSystemXmlApplicationContext;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
@@ -21,8 +17,10 @@ public class App
         
         String name = person.getFirstName();
         System.out.println("Person firstName: " + name);
+        System.out.println(person);
         
 //        ((FileSystemXmlApplicationContext) context).close();
         ((ClassPathXmlApplicationContext) context).close();
     }
+
 }
