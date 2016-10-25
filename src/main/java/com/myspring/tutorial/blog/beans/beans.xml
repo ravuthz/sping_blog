@@ -5,8 +5,10 @@
 
 
 	<bean id="person" class="com.myspring.tutorial.blog.Person">
-		<constructor-arg value="101" name="id"></constructor-arg>
-		<constructor-arg value="ravuth" name="firstName"></constructor-arg>
-		<constructor-arg value="yo" name="lastName"></constructor-arg>
+		<constructor-arg value="101" name="id" type="int"></constructor-arg>
+		<constructor-arg value="ravuth" name="firstName"
+			type="String">
+		</constructor-arg>
+		<constructor-arg value="yo" name="lastName" type="String"></constructor-arg>
 	</bean>
 </beans>
